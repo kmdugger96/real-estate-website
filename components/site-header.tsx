@@ -64,6 +64,9 @@ export function SiteHeader() {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
+            <Link href="/contact">
+              <Button variant="ghost">Contact</Button>
+            </Link>
             <Link href="/book-appointment">
               <Button variant="ghost">Book Call</Button>
             </Link>
@@ -146,6 +149,11 @@ export function SiteHeader() {
                 </Button>
               </Link>
             </div>
+            <Link href="/contact" className="block">
+              <Button variant="ghost" className="w-full justify-start" onClick={() => setMobileMenuOpen(false)}>
+                Contact
+              </Button>
+            </Link>
             <Link href="/book-appointment" className="block">
               <Button variant="ghost" className="w-full justify-start" onClick={() => setMobileMenuOpen(false)}>
                 Book Call

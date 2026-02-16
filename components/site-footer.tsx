@@ -83,16 +83,16 @@ export function SiteFooter() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border/40 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>© 2025 SendKyleDeals. All rights reserved.</p>
+          <p>© 2026 SendKyleDeals. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="/terms-and-conditions" className="hover:text-foreground transition-colors">
-              Terms and Conditions
+            <Link href="/terms" className="hover:text-foreground transition-colors">
+              Terms & SMS Policy
             </Link>
             <Link href="/privacy-policy" className="hover:text-foreground transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms-of-service" className="hover:text-foreground transition-colors">
-              Terms of Service
+            <Link href="/contact" className="hover:text-foreground transition-colors">
+              Contact
             </Link>
           </div>
         </div>
