@@ -84,14 +84,14 @@ export function SiteFooter() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border/40 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <p>© 2026 SendKyleDeals. All rights reserved.</p>
-          <div className="flex gap-6">
-            <Link href="/terms" className="hover:text-foreground transition-colors">
+          <div className="flex gap-8">
+            <Link href="/terms" className="font-medium hover:text-foreground transition-colors">
               Terms & SMS Policy
             </Link>
-            <Link href="/privacy-policy" className="hover:text-foreground transition-colors">
+            <Link href="/privacy-policy" className="font-medium hover:text-foreground transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/contact" className="hover:text-foreground transition-colors">
+            <Link href="/contact" className="font-medium hover:text-foreground transition-colors">
               Contact
             </Link>
           </div>
