@@ -1,5 +1,9 @@
 import { type NextRequest, NextResponse } from "next/server"
-import { createServerClient } from "@/app/supabase-server"
+import { createClient } from "@supabase/supabase-js"
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 export async function POST(request: NextRequest) {
   try {
@@ -13,7 +17,6 @@ export async function POST(request: NextRequest) {
       type: body.appointmentType,
     })
 
-    const supabase = await createServerClient()
     const { data, error } = await supabase
       .from("appointments")
       .insert([
@@ -28,7 +31,7 @@ export async function POST(request: NextRequest) {
           message: body.message,
           sms_opt_in: body.smsOptIn,
           created_at: new Date().toISOString(),
-          ip_address: request.ip,
+          ip_address: request.ip || null,
           user_agent: request.headers.get("user-agent"),
         },
       ])
