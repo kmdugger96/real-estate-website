@@ -20,7 +20,7 @@ export default function TermsPage() {
               Terms & SMS Policy
             </h1>
             <p className="text-muted-foreground mb-12">
-              Last updated: February 15, 2026
+              Last updated: February 24, 2026
             </p>
 
             <div className="prose prose-invert max-w-none space-y-8">

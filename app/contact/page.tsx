@@ -13,6 +13,7 @@ import { CheckCircle2, Mail, Phone } from "lucide-react"
 
 export default function ContactPage() {
   const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
   const [phone, setPhone] = useState("")
   const [smsConsent, setSmsConsent] = useState(false)
   const [submitted, setSubmitted] = useState(false)
@@ -21,7 +22,7 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    if (!smsConsent) return
+    if (phone && !smsConsent) return
 
     setSubmitting(true)
 
@@ -84,14 +85,29 @@ export default function ContactPage() {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="phone">Phone Number</Label>
+                      <Label htmlFor="email">Email</Label>
+                      <Input
+                        id="email"
+                        type="email"
+                        placeholder="you@example.com"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                        className="bg-background"
+                      />
+                    </div>
+
+                    <div className="space-y-2">
+                      <Label htmlFor="phone">
+                        Phone Number{" "}
+                        <span className="text-muted-foreground font-normal">(optional)</span>
+                      </Label>
                       <Input
                         id="phone"
                         type="tel"
                         placeholder="(555) 123-4567"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
-                        required
                         className="bg-background"
                       />
                     </div>
@@ -132,13 +148,13 @@ export default function ContactPage() {
 
                     <Button
                       type="submit"
-                      disabled={!smsConsent || submitting}
+                      disabled={(phone !== "" && !smsConsent) || submitting}
                       className="w-full bg-[#00FF84] text-black hover:bg-[#00FF84]/90 text-lg py-6 disabled:opacity-50"
                     >
                       {submitting ? "Submitting..." : "Submit"}
                     </Button>
 
-                    {!smsConsent && (
+                    {phone && !smsConsent && (
                       <p className="text-xs text-muted-foreground text-center">
                         Please check the SMS consent box above to continue.
                       </p>

@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
               Privacy Policy
             </h1>
             <p className="text-muted-foreground mb-12">
-              Last updated: February 15, 2026
+              Last updated: February 24, 2026
             </p>
 
             <div className="prose prose-invert max-w-none space-y-8">
@@ -72,6 +72,37 @@ export default function PrivacyPolicyPage() {
                   marketing purposes</strong> beyond the stated use of communicating about real
                   estate investment opportunities. We do not sell, rent, or trade your
                   personal data.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="font-space-grotesk text-2xl font-bold mb-4 text-foreground">
+                  SMS/Text Messaging Privacy
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  No mobile information will be shared with third parties/affiliates for
+                  marketing/promotional purposes. All the above categories exclude text
+                  messaging originator opt-in data and consent; this information will not
+                  be shared with any third parties.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  By opting in to SMS messaging from SendKyleDeals, you consent to receive
+                  recurring text messages about real estate investment opportunities.
+                  Message frequency varies. Message and data rates may apply. You may opt
+                  out at any time by replying <strong className="text-foreground">STOP</strong> to
+                  any message. For help, reply <strong className="text-foreground">HELP</strong> or
+                  contact us at{" "}
+                  <a
+                    href="mailto:support@sendkyledeals.com"
+                    className="text-[#00FF84] hover:underline"
+                  >
+                    support@sendkyledeals.com
+                  </a>{" "}
+                  or{" "}
+                  <a href="tel:+17324101010" className="text-[#00FF84] hover:underline">
+                    (732) 410-1010
+                  </a>
+                  .
                 </p>
               </section>
 
