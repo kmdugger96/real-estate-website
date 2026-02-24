@@ -25,10 +25,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "DealFlow - Submit Your Real Estate Deals",
+  title: "SendKyleDeals - Real Estate Investment Opportunities in New Jersey",
   description:
-    "Fast, transparent real estate deal submissions. Get your property evaluated quickly by experienced investors.",
-  generator: "v0.app",
+    "Connect with Kyle for real estate investment opportunities in New Jersey. Submit deals, browse properties, and get fast evaluations from an experienced investor.",
 }
 
 export default function RootLayout({

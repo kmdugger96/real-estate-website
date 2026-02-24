@@ -48,18 +48,18 @@ export function SiteFooter() {
             <h3 className="font-space-grotesk font-semibold mb-4">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  How It Works
+                <Link href="/protect-your-investment" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Protect Your Investment
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  FAQ
+                <Link href="/resources" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Documents & Templates
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Blog
+                <Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Contact Us
                 </Link>
               </li>
             </ul>

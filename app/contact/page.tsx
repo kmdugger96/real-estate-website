@@ -109,10 +109,10 @@ export default function ContactPage() {
                         htmlFor="sms-consent"
                         className="text-sm text-muted-foreground leading-relaxed cursor-pointer"
                       >
-                        I agree to receive SMS messages from Kyle about real estate
+                        I agree to receive SMS messages from SendKyleDeals about real estate
                         investment opportunities. Message frequency varies. Message and
                         data rates may apply. Reply STOP to unsubscribe at any time.
-                        View our{" "}
+                        Consent is not a condition of any purchase or service. View our{" "}
                         <Link
                           href="/privacy-policy"
                           className="text-[#00FF84] hover:underline"

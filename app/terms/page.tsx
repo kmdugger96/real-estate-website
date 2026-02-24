@@ -5,7 +5,7 @@ import { SiteFooter } from "@/components/site-footer"
 
 export const metadata: Metadata = {
   title: "Terms & SMS Policy - SendKyleDeals",
-  description: "Terms of use and SMS messaging policy for Kyle RE Investing.",
+  description: "Terms of use and SMS messaging policy for SendKyleDeals.",
 }
 
 export default function TermsPage() {
@@ -45,7 +45,7 @@ export default function TermsPage() {
                     <dl className="space-y-4">
                       <div>
                         <dt className="font-semibold text-foreground">Program Name</dt>
-                        <dd className="text-muted-foreground">Kyle RE Investing</dd>
+                        <dd className="text-muted-foreground">SendKyleDeals</dd>
                       </div>
                       <div>
                         <dt className="font-semibold text-foreground">Program Description</dt>
@@ -77,9 +77,9 @@ export default function TermsPage() {
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
                   By submitting the contact form on our website and checking the SMS
-                  consent checkbox, you expressly consent to receive SMS messages from Kyle
-                  about real estate investment opportunities. Consent is not a condition of
-                  any purchase or service.
+                  consent checkbox, you expressly consent to receive SMS messages from
+                  SendKyleDeals about real estate investment opportunities. Consent is not
+                  a condition of any purchase or service.
                 </p>
               </section>
 
