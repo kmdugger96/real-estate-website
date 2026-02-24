@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
       type: body.appointmentType,
     })
 
-    const supabase = createServerClient()
+    const supabase = await createServerClient()
     const { data, error } = await supabase
       .from("appointments")
       .insert([

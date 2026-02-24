@@ -26,9 +26,19 @@ export default function ContactPage() {
 
     setSubmitting(true)
 
-    // TODO: Wire up to your backend/Supabase
-    // For now, simulate a submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, phone, smsConsent }),
+      })
+      const data = await res.json()
+      if (!data.success) {
+        console.error("Contact submission failed:", data.message)
+      }
+    } catch (err) {
+      console.error("Contact submission error:", err)
+    }
 
     setSubmitted(true)
     setSubmitting(false)
